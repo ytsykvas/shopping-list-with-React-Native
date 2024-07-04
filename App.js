@@ -18,11 +18,11 @@ export default function App() {
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.textInput}
-          placeholder="Type here"
+          placeholder="Enter item"
           onChangeText={goalInputHandler}
           value={enteredGoalText}
         />
-        <Button title="submit" onPress={addGoalHandler} />
+        <Button title="Add" onPress={addGoalHandler} />
       </View>
       <View style={styles.goalsContainer}>
         {courseGoals.map((goal) => (
