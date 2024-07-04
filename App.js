@@ -3,8 +3,8 @@ import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 export default function App() {
   return (
     <View style={styles.appContainer}>
-      <View>
-        <TextInput placeholder='Type here'/>
+      <View style={styles.inputContainer}>
+        <TextInput style={styles.textInput} placeholder='Type here'/>
         <Button title='submit'/>
       </View>
       <View>
@@ -17,5 +17,16 @@ export default function App() {
 const styles = StyleSheet.create({
   appContainer: {
     padding: 80
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+  textInput: {
+    borderWidth: 1,
+    boederColor: 'black',
+    width: '80%',
+    marginRight: 8,
+    padding: 8
   }
 });
